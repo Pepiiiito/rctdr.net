@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle RC 3D — Procés</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="process">
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="brand">Vehicle RC 3D</div>
+      <nav class="nav-links">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="project.html" data-page="project">Project</a>
+        <a href="process.html" data-page="process">Process</a>
+        <a href="model.html" data-page="model">3D Model</a>
+        <a href="results.html" data-page="results">Results</a>
+        <a href="assets/tdr-projecte.pdf" download>Download PDF</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="section-inner">
+        <div class="tag">Procés i iteració</div>
+        <h1>Mètode de treball</h1>
+        <div class="grid-two">
+          <div>
+            <h3>Enfoc</h3>
+            <p>Construcció incremental: esbossos → impressió de prova → mesura → correcció. Les decisions es basen en toleràncies reals, fricció i rigidesa observada.</p>
+            <div class="callout">
+              <h4>Control de temps</h4>
+              <p>Iteracions curtes i freqüents per detectar errors (warping, fricció, joc axial) abans d’invertir més material.</p>
+            </div>
+          </div>
+          <div>
+            <h3>Materials de treball</h3>
+            <ul class="list-plain">
+              <li>PLA mat per a xassís i peces primàries; PETG en punts d’esforç.</li>
+              <li>Rodaments 10x15 reutilitzats; cargols M3.</li>
+              <li>Adhesiu de barra per reduir warping en peces llargues.</li>
+            </ul>
+            <div class="callout">
+              <h4>Gestió de warping</h4>
+              <p>PLA mat + adhesiu de barra sobre llit per reduir aixecaments en peces llargues.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner">
+        <h3>Iteracions clau</h3>
+        <h2>Errors, correccions i aprenentatges</h2>
+        <div class="timeline-steps">
+          <div class="timeline-step">
+            <div class="label">Esbós → v1</div>
+            <div class="body">
+              <h4>Direcció amb engranatge intermedi</h4>
+              <p>Massa joc i fricció lateral; es passa a servo directe per reduir backlash i manteniment.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="label">Dissenys 1–2</div>
+            <div class="body">
+              <h4>Sense fixacions fiables</h4>
+              <p>Falten punts de suport i paral·lelisme; es reforça estructura i punts de gir.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="label">Imp. 1–3</div>
+            <div class="body">
+              <h4>Ranura i topall</h4>
+              <p>Ranura al palet servo→roda per toleràncies; topall evita desplaçament del tubet.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="label">Tracció</div>
+            <div class="body">
+              <h4>Eix i fricció</h4>
+              <p>Eix sense topalls es movia; s’afegeix cara plana i topalls. Pinyó fregava: rebaixa paret i ajusta reborde.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="label">Warping</div>
+            <div class="body">
+              <h4>Xassís compactat</h4>
+              <p>Warping en peces llargues: adhesiu de barra; tram central de 120 → 80 mm; reubicació de cargols i reforç de gruix.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="label">Suspensió</div>
+            <div class="body">
+              <h4>Flex TPU</h4>
+              <p>Sense temps per amortidors: TPU frontal i làmina posterior. Error 3: parets es doblaven; cargols desplaçats cap enfora.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <h4>Correcció crítica</h4>
+          <p>El pinyó enganxava el xassís: rebaixa local i reborde interior per guiar el rodament sense fricció.</p>
+        </div>
+
+        <div class="gallery" aria-label="Etapes del procés">
+          <figure>
+            <img src="assets/tdr-process-1.jpg" alt="Esbós inicial" loading="lazy">
+            <figcaption>Esbós inicial amb engranatge intermedi.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/tdr-process-2.jpg" alt="Impressió prova direcció" loading="lazy">
+            <figcaption>Impressió 2: ranura i topall afegits.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/tdr-process-3.jpg" alt="Xassís compactat" loading="lazy">
+            <figcaption>Xassís compactat per reduir warping i interferències.</figcaption>
+          </figure>
+        </div>
+        <p class="note">Galeria minimal: clic per ampliar (afegir imatges a assets/ si falta algun fitxer).</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

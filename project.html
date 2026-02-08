@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle RC 3D — Projecte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="project">
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="brand">Vehicle RC 3D</div>
+      <nav class="nav-links">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="project.html" data-page="project">Project</a>
+        <a href="process.html" data-page="process">Process</a>
+        <a href="model.html" data-page="model">3D Model</a>
+        <a href="results.html" data-page="results">Results</a>
+        <a href="assets/tdr-projecte.pdf" download>Download PDF</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="section-inner">
+        <div class="tag">Projecte i context</div>
+        <h1>Per què aquest vehicle</h1>
+        <p class="lede">Repte pràctic per dissenyar un RC funcional des de zero, prioritzant aprenentatge per construcció i resolució d’incidències reals de fabricació.</p>
+        <div class="grid-two">
+          <div>
+            <h3>Motivació</h3>
+            <p>Afegir experiència real en disseny 3D, mecànica i electrònica amb un projecte tangible. Evitar un treball teòric llarg i centrar esforços en decisions d’arquitectura i toleràncies.</p>
+            <ul class="list-plain">
+              <li>Aprenentatge exprés de Fusion 360.</li>
+              <li>Iteració constant i mesura dels errors.</li>
+              <li>Auto-finançament i control de costos.</li>
+            </ul>
+            <div class="callout">
+              <h4>Decisió clau</h4>
+              <p>Optar per construcció “learning-by-building” en comptes de teoria extensa, assumint temps extra en prototips i proves físiques.</p>
+            </div>
+          </div>
+          <div>
+            <h3>Condicionants</h3>
+            <ul class="list-plain">
+              <li>Pressupost inicial 200 € → 335 € reals (vendes de peces 3D).</li>
+              <li>Retard de 3 setmanes en l’arribada de motor/ESC de RcPro.</li>
+              <li>Fabricació 3D com a premissa: PLA mat i PETG, desgast més alt.</li>
+              <li>Reciclatge de rodaments 10x15 i eines domèstiques.</li>
+              <li>~800–900 g de PLA consumit en proves per validar geometries.</li>
+            </ul>
+            <div class="callout">
+              <h4>Risc assumit</h4>
+              <p>Acceptar el desgast de PLA en engranatges per prioritzar temps i cost; millora futura amb material tècnic o metall.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner">
+        <h3>Sistema</h3>
+        <h2>Arquitectura del vehicle</h2>
+        <div class="grid-three">
+          <div>
+            <h4>Xassís obert</h4>
+            <p>Tram central reduït de 120 mm a 80 mm per compactar masses i evitar interferències en gir complet. Ajustos locals on els cargols fracturaven parets fines.</p>
+          </div>
+          <div>
+            <h4>Transmissió</h4>
+            <p>Helicoïdal 35/15 dents (25 mm centre-centre). Eix amb topalls i cara plana per eliminar joc axial i errors de tolerància. Reducció de fricció contra el xassís.</p>
+          </div>
+          <div>
+            <h4>Direcció</h4>
+            <p>D’engegatge intermedi a servo directe amb doble subjecció. Ranura al palet per absorbir toleràncies i topall que evita desplaçament del tubet.</p>
+          </div>
+          <div>
+            <h4>Electrònica</h4>
+            <p>Kit emissor 2.4 GHz, LiPo 2200 mAh (càrrega IMAX), motor + ESC Hobbywing QuickRun, servo direccional. Reordenació de cablatge per volum reduït.</p>
+          </div>
+          <div>
+            <h4>Materialització</h4>
+            <p>PLA mat (gestió de warping amb adhesiu de barra) i PETG en punts d’esforç. Impressora Bambu Lab A1.</p>
+          </div>
+        </div>
+        <div class="grid-three" style="margin-top:24px;">
+          <div class="stat-line">2.33:1 <span>Relació helicoidal (35/15)</span></div>
+          <div class="stat-line">~335 € <span>Pressupost actualitzat (20/10/25)</span></div>
+          <div class="stat-line">800–900 g <span>PLA gastat en prototips</span></div>
+          <div class="stat-line">+20 mm <span>Allargament posterior per evitar contacte roda-xassís</span></div>
+          <div class="stat-line">25 mm <span>Distància centre a centre engranatges</span></div>
+        </div>
+
+        <div class="callout">
+          <h4>Fricció i toleràncies</h4>
+          <p>Pinyó fregava el xassís: es rebaixa paret i s’ajusta reborde intern. Eix amb topalls i cara plana per eliminar joc axial.</p>
+        </div>
+
+        <div class="gallery" aria-label="Referències visuals">
+          <figure>
+            <img src="assets/tdr-projecte-thumb1.jpg" alt="Esbós de direcció" loading="lazy">
+            <figcaption>Esbós direcció inicial (gear intermedi).</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/tdr-projecte-thumb2.jpg" alt="Tracció helicoidal" loading="lazy">
+            <figcaption>Engranatge 35/15 i eix amb topall.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/tdr-projecte-thumb3.jpg" alt="Xassís PLA" loading="lazy">
+            <figcaption>Xassís PLA compactat (120 → 80 mm).</figcaption>
+          </figure>
+        </div>
+        <p class="note">Les imatges són de referència; ampliar clicant. Si no existeixen, afegeix-les a assets/ amb el mateix nom.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

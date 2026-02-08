@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle RC 3D — Resultats</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="results">
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="brand">Vehicle RC 3D</div>
+      <nav class="nav-links">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="project.html" data-page="project">Project</a>
+        <a href="process.html" data-page="process">Process</a>
+        <a href="model.html" data-page="model">3D Model</a>
+        <a href="results.html" data-page="results">Results</a>
+        <a href="assets/tdr-projecte.pdf" download>Download PDF</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="section-inner">
+        <div class="tag">Proves i resultats</div>
+        <h1>Rendiment i limitacions</h1>
+        <div class="grid-two">
+          <div>
+            <h3>Rendiment observat</h3>
+            <ul class="list-plain">
+              <li>Velocitat superior a l’estimació inicial amb el combo QuickRun (tests als vídeos originals).</li>
+              <li>Plataforma compacta i estable després de recentrat de masses.</li>
+              <li>Engranatges helicoidals ajustats funcionen amb fluïdesa després de reduir fricció.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Limitacions</h3>
+            <ul class="list-plain">
+              <li>Engranatges PLA es degraden en ús intensiu; cal material més resistent o metall.</li>
+              <li>Direcció encara amb lleu desalineació: bieles necessiten ajust fi.</li>
+              <li>Filament TPU per a plaques flexibles pendent d’instal·lar.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner">
+        <h3>Autonomia</h3>
+        <h2>LiPo 2200 mAh</h2>
+        <table class="table">
+          <tr><td>5 A</td><td>~26.4 min (càlcul) — ús moderat</td></tr>
+          <tr><td>10 A</td><td>~13.2 min — ús exigent</td></tr>
+          <tr><td>20 A</td><td>~6.6 min — límit</td></tr>
+        </table>
+        <p class="note">Cal carregador específic IMAX; no estava previst inicialment.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner">
+        <h3>Aprenentatges i següents passos</h3>
+        <div class="grid-two">
+          <div>
+            <h4>Aprenentatges</h4>
+            <ul class="list-plain">
+              <li>Gestió de toleràncies en engranatges i rodaments; importància del joc axial.</li>
+              <li>Control de warping amb PLA mat i redistribució de geometria.</li>
+              <li>Planificació de temps curt però recurrent per iterar i mesurar.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Properes millores</h4>
+            <ul class="list-plain">
+              <li>Diferencial posterior i motor en vertical per suavitzar corbes.</li>
+              <li>Carrosseria de ral·li i caixa de transport amb foam.</li>
+              <li>Bieles de direcció en TPU calibrades per zero offset.</li>
+              <li>Proves amb materials tècnics i publicació en plataformes de models.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner">
+        <h3>Detalls del projecte</h3>
+        <table class="table">
+          <tr><td>Autor</td><td>Adrià González Domènech</td></tr>
+          <tr><td>Centre / modalitat</td><td>Institut Berenguer d’Entença — Batxillerat Tecnològic</td></tr>
+          <tr><td>Curs</td><td>2025-26</td></tr>
+          <tr><td>Tipus de vehicle</td><td>On-road híbrid Touring/Rally. Tracció helicoidal 35:15, plataforma PLA/PETG.</td></tr>
+          <tr><td>Impressió</td><td>Bambu Lab A1 · PLA mat + PETG · 0.8–0.9 kg de prototips descartats</td></tr>
+          <tr><td>Fitxer CAD</td><td><code>TdR 2.0.f3z</code> (Fusion 360) — exportar a STL/GLB per a la vista 3D</td></tr>
+          <tr><td>Documentació</td><td><a href="/assets/tdr-projecte.pdf" download>Descarrega el PDF</a></td></tr>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
