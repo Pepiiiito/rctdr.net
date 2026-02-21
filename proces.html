@@ -1,0 +1,158 @@
+﻿<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RCTDR | Procés</title>
+    <meta
+      name="description"
+      content="Pàgina de procés del TDR RCTDR: cronologia tècnica del desenvolupament del vehicle RC imprès en 3D."
+    />
+    <meta name="theme-color" content="#f7f4ee" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient-bg" aria-hidden="true">
+      <span class="blob blob-a"></span>
+      <span class="blob blob-b"></span>
+      <span class="grain"></span>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="Inici">
+          <span class="brand-badge">R</span>
+          <span class="brand-text">
+            <strong>RCTDR</strong>
+            <small>Portfoli TDR</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Obre el menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" data-page="index.html">Inici</a>
+          <a href="projecte.html" data-page="projecte.html">Projecte</a>
+          <a href="proces.html" data-page="proces.html">Procés</a>
+          <a href="videos.html" data-page="videos.html">Vídeos</a>
+          <a href="recursos.html" data-page="recursos.html">Recursos</a>
+          <a href="contacte.html" data-page="contacte.html" class="btn btn-soft">Contacte</a>
+        </nav>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <span class="progress-bar" id="scrollProgress"></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="proces-main">
+        <div class="section-head reveal">
+          <p class="eyebrow">Procés</p>
+          <h2>Del concepte al vehicle funcional</h2>
+          <p class="section-lead">Cronologia tècnica de desenvolupament i millora del projecte.</p>
+        </div>
+
+        <ol class="timeline" role="list">
+          <li class="timeline-item reveal">
+            <span class="timeline-step">01</span>
+            <div>
+              <h3>Marc tècnic</h3>
+              <p>Definició de requisits mecànics, electrònics i de fabricació.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-step">02</span>
+            <div>
+              <h3>Disseny CAD i iteració</h3>
+              <p>Evolució del xassís amb ajustos de rigidesa, accés i compatibilitat.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-step">03</span>
+            <div>
+              <h3>Impressió i postprocés</h3>
+              <p>Paràmetres per peça i preparació de components abans del muntatge.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-step">04</span>
+            <div>
+              <h3>Muntatge, proves i millora</h3>
+              <p>Validació en pista, detecció de punts crítics i redisseny successiu.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section container" id="proces-metode">
+        <div class="section-head reveal">
+          <p class="eyebrow">Mètode</p>
+          <h2>Com es va validar cada fase</h2>
+          <p class="section-lead">Cada etapa té una entrada, una prova i un resultat esperat.</p>
+        </div>
+
+        <div class="flow-grid">
+          <article class="flow-card reveal">
+            <h3>Fase A · Disseny</h3>
+            <p><strong>Entrada:</strong> requisits mecànics i electrònics.</p>
+            <p><strong>Prova:</strong> revisió CAD i compatibilitats.</p>
+            <p><strong>Sortida:</strong> geometria imprimible i coherent.</p>
+          </article>
+          <article class="flow-card reveal">
+            <h3>Fase B · Fabricació</h3>
+            <p><strong>Entrada:</strong> STL i paràmetres d'impressió.</p>
+            <p><strong>Prova:</strong> control de toleràncies i acabat.</p>
+            <p><strong>Sortida:</strong> peces aptes per muntatge.</p>
+          </article>
+          <article class="flow-card reveal">
+            <h3>Fase C · Validació</h3>
+            <p><strong>Entrada:</strong> vehicle muntat.</p>
+            <p><strong>Prova:</strong> test de pista i observació dinàmica.</p>
+            <p><strong>Sortida:</strong> llista de millores per iteració.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="proces-controls">
+        <div class="section-head reveal">
+          <p class="eyebrow">Control</p>
+          <h2>Punts de seguiment tècnic</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="info-card reveal">
+            <h3>Qualitat de peça</h3>
+            <p>Comprovació dimensional i estat superficial abans del muntatge.</p>
+          </article>
+          <article class="info-card reveal">
+            <h3>Comportament dinàmic</h3>
+            <p>Observació de tracció, estabilitat i resposta de direcció en pista.</p>
+          </article>
+          <article class="info-card reveal">
+            <h3>Millora contínua</h3>
+            <p>Cada prova alimenta una nova iteració de disseny i ajustos finals.</p>
+            <a class="card-action" href="videos.html">Veure vídeos</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p id="copyright"></p>
+        <a href="#top">Torna amunt</a>
+      </div>
+    </footer>
+  </body>
+</html>

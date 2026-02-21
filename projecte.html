@@ -1,0 +1,161 @@
+﻿<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RCTDR | Projecte</title>
+    <meta
+      name="description"
+      content="Pàgina de projecte del TDR RCTDR: objectius, valor i enfocament tècnic del vehicle RC imprès en 3D."
+    />
+    <meta name="theme-color" content="#f7f4ee" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient-bg" aria-hidden="true">
+      <span class="blob blob-a"></span>
+      <span class="blob blob-b"></span>
+      <span class="grain"></span>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="Inici">
+          <span class="brand-badge">R</span>
+          <span class="brand-text">
+            <strong>RCTDR</strong>
+            <small>Portfoli TDR</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Obre el menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" data-page="index.html">Inici</a>
+          <a href="projecte.html" data-page="projecte.html">Projecte</a>
+          <a href="proces.html" data-page="proces.html">Procés</a>
+          <a href="videos.html" data-page="videos.html">Vídeos</a>
+          <a href="recursos.html" data-page="recursos.html">Recursos</a>
+          <a href="contacte.html" data-page="contacte.html" class="btn btn-soft">Contacte</a>
+        </nav>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <span class="progress-bar" id="scrollProgress"></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="projecte-main">
+        <div class="section-head reveal">
+          <p class="eyebrow">Projecte</p>
+          <h2>Què aporta aquest TDR</h2>
+          <p class="section-lead">
+            Un enfocament pràctic per demostrar que un vehicle RC funcional es pot desenvolupar
+            amb disseny CAD, impressió 3D i validació real en pista.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="info-card reveal">
+            <h3>Objectiu principal</h3>
+            <p>Construir un vehicle RC imprès en 3D que sigui funcional, documentat i replicable.</p>
+          </article>
+          <article class="info-card reveal">
+            <h3>Enfocament tècnic</h3>
+            <p>Iteració contínua entre disseny, fabricació, muntatge i proves reals.</p>
+          </article>
+          <article class="info-card reveal">
+            <h3>Valor del treball</h3>
+            <p>Transformar la recerca en un resultat tangible i útil per a tercers.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="projecte-dual">
+        <div class="section-head reveal">
+          <p class="eyebrow">Doble lectura</p>
+          <h2>Explicació per públic general i perfil tècnic</h2>
+        </div>
+
+        <div class="dual-grid">
+          <article class="detail-card reveal">
+            <p class="card-meta">Explicat fàcil</p>
+            <h3>Idea central del projecte</h3>
+            <p>
+              No és només imprimir peces: és demostrar un mètode de treball complet
+              (disseny, fabricació, prova i millora) que qualsevol persona pugui seguir.
+            </p>
+            <ul class="chip-list">
+              <li>Problema real</li>
+              <li>Solució funcional</li>
+              <li>Documentació útil</li>
+            </ul>
+          </article>
+
+          <article class="detail-card detail-tech reveal">
+            <p class="card-meta">Detall tècnic</p>
+            <h3>Decisions de disseny</h3>
+            <div class="tech-table">
+              <p><span>Xassís</span><strong>Geometria optimitzada per FDM</strong></p>
+              <p><span>Compatibilitat</span><strong>Components RC estàndard</strong></p>
+              <p><span>Manteniment</span><strong>Peces modulars i substituïbles</strong></p>
+              <p><span>Iteració</span><strong>Canvis guiats per prova real</strong></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="projecte-claus">
+        <div class="section-head reveal">
+          <p class="eyebrow">Claus</p>
+          <h2>Punts forts i resultats observables</h2>
+        </div>
+
+        <div class="kpi-grid">
+          <article class="kpi-card reveal">
+            <small>Iteracions</small>
+            <strong>3</strong>
+            <p>Evolució progressiva del disseny del xassís.</p>
+          </article>
+          <article class="kpi-card reveal">
+            <small>Fabricació</small>
+            <strong>FDM</strong>
+            <p>Procés orientat a impressora domèstica.</p>
+          </article>
+          <article class="kpi-card reveal">
+            <small>Validació</small>
+            <strong>Pista real</strong>
+            <p>Comprovació de tracció, control i fiabilitat.</p>
+          </article>
+          <article class="kpi-card reveal">
+            <small>Transferència</small>
+            <strong>STL + PDF</strong>
+            <p>Base documentada perquè altres la puguin replicar.</p>
+          </article>
+        </div>
+
+        <div class="section-foot reveal">
+          <a class="card-action" href="recursos.html">Veure recursos i fitxers</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p id="copyright"></p>
+        <a href="#top">Torna amunt</a>
+      </div>
+    </footer>
+  </body>
+</html>

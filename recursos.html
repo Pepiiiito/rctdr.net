@@ -1,0 +1,155 @@
+﻿<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RCTDR | Recursos</title>
+    <meta
+      name="description"
+      content="Pàgina de recursos del TDR RCTDR: fitxers STL, documentació i material de suport del projecte."
+    />
+    <meta name="theme-color" content="#f7f4ee" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js" defer></script>
+    <script src="https://unpkg.com/three@0.160.0/examples/js/loaders/STLLoader.js" defer></script>
+    <script src="https://unpkg.com/three@0.160.0/examples/js/controls/OrbitControls.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient-bg" aria-hidden="true">
+      <span class="blob blob-a"></span>
+      <span class="blob blob-b"></span>
+      <span class="grain"></span>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="Inici">
+          <span class="brand-badge">R</span>
+          <span class="brand-text">
+            <strong>RCTDR</strong>
+            <small>Portfoli TDR</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Obre el menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" data-page="index.html">Inici</a>
+          <a href="projecte.html" data-page="projecte.html">Projecte</a>
+          <a href="proces.html" data-page="proces.html">Procés</a>
+          <a href="videos.html" data-page="videos.html">Vídeos</a>
+          <a href="recursos.html" data-page="recursos.html">Recursos</a>
+          <a href="contacte.html" data-page="contacte.html" class="btn btn-soft">Contacte</a>
+        </nav>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <span class="progress-bar" id="scrollProgress"></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="models-3d">
+        <div class="section-head reveal">
+          <p class="eyebrow">Models 3D</p>
+          <h2>Visualitzaci\u00f3 dins la p\u00e0gina</h2>
+          <p class="section-lead">Pots girar els models amb el ratol\u00ed i fer zoom amb la roda.</p>
+        </div>
+
+        <div class="model-grid" id="modelGallery"></div>
+      </section>
+
+      <section class="section container" id="memoria-pdf">
+        <div class="section-head reveal">
+          <p class="eyebrow">Mem\u00f2ria</p>
+          <h2>PDF visible dins la p\u00e0gina</h2>
+          <p class="section-lead">Pots llegir la mem\u00f2ria directament aqu\u00ed o obrir-la en una pestanya nova.</p>
+        </div>
+
+        <div class="pdf-viewer reveal">
+          <iframe
+            src="docs/TdR.pdf#view=FitH"
+            title="Mem\u00f2ria del TDR en PDF"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="pdf-actions reveal">
+          <a class="btn btn-outline" href="docs/TdR.pdf" target="_blank" rel="noopener noreferrer">Obrir PDF en pestanya nova</a>
+        </div>
+      </section>
+
+      <section class="section container" id="recursos-main">
+        <div class="section-head reveal">
+          <p class="eyebrow">Recursos</p>
+          <h2>Arxius i enllaços del projecte</h2>
+          <p class="section-lead">Model inicial actiu. Model 2 en stand by.</p>
+        </div>
+
+        <div class="resource-grid" id="resourceGrid"></div>
+      </section>
+
+      <section class="section container" id="recursos-ordre">
+        <div class="section-head reveal">
+          <p class="eyebrow">Ordre recomanat</p>
+          <h2>Com aprofitar els recursos</h2>
+        </div>
+
+        <div class="flow-grid">
+          <article class="flow-card reveal">
+            <h3>1 · Entendre el context</h3>
+            <p>Llegeix la memòria per veure objectius, metodologia i conclusions.</p>
+          </article>
+          <article class="flow-card reveal">
+            <h3>2 · Revisar dissenys</h3>
+            <p>Explora els STL en el visor 3D i comprova les parts del model inicial.</p>
+          </article>
+          <article class="flow-card reveal">
+            <h3>3 · Preparar fabricació</h3>
+            <p>Quan estiguin disponibles, aplica guia d'impressió i manual de muntatge.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="recursos-nota">
+        <div class="section-head reveal">
+          <p class="eyebrow">Estat</p>
+          <h2>Versions dels dissenys</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="info-card reveal">
+            <h3>Model inicial</h3>
+            <p>Ja inclou els 3 STL que has compartit (xassís, tracció i direcció).</p>
+          </article>
+          <article class="info-card reveal">
+            <h3>Model 2</h3>
+            <p>Reservat com a stand by fins que passis els enllaços finals.</p>
+          </article>
+          <article class="info-card reveal">
+            <h3>Documentació</h3>
+            <p>Memòria, guia i manual queden preparats per afegir l'URL directa.</p>
+            <a class="card-action" href="contacte.html">Avisar canvis</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p id="copyright"></p>
+        <a href="#top">Torna amunt</a>
+      </div>
+    </footer>
+  </body>
+</html>

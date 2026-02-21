@@ -1,0 +1,193 @@
+﻿<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RCTDR | Inici</title>
+    <meta
+      name="description"
+      content="Portfoli tècnic del TDR RCTDR: projecte de vehicle RC imprès en 3D amb contingut organitzat per pàgines."
+    />
+    <meta name="theme-color" content="#f7f4ee" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient-bg" aria-hidden="true">
+      <span class="blob blob-a"></span>
+      <span class="blob blob-b"></span>
+      <span class="grain"></span>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="Inici">
+          <span class="brand-badge">R</span>
+          <span class="brand-text">
+            <strong>RCTDR</strong>
+            <small>Portfoli TDR</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Obre el menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" data-page="index.html">Inici</a>
+          <a href="projecte.html" data-page="projecte.html">Projecte</a>
+          <a href="proces.html" data-page="proces.html">Procés</a>
+          <a href="videos.html" data-page="videos.html">Vídeos</a>
+          <a href="recursos.html" data-page="recursos.html">Recursos</a>
+          <a href="contacte.html" data-page="contacte.html" class="btn btn-soft">Contacte</a>
+        </nav>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <span class="progress-bar" id="scrollProgress"></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Treball de Recerca · Adrià González Domènech · 2n Batxillerat</p>
+          <h1>Creació d'un Vehicle RC imprès en 3D</h1>
+          <p class="lead">
+            Ara el portfoli està separat per pàgines: cada tema té el seu espai.
+            Això fa la lectura més clara, neta i fàcil de seguir.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="videos.html">Veure vídeo principal</a>
+            <a class="btn btn-outline" href="recursos.html">Obrir recursos</a>
+          </div>
+          <ul class="hero-metrics" role="list">
+            <li>
+              <strong>3</strong>
+              <span>iteracions de xassís</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>autor del projecte</span>
+            </li>
+            <li>
+              <strong>100%</strong>
+              <span>enfocament pràctic</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-panel reveal" aria-label="Resum del portfoli">
+          <div class="panel-header">
+            <span>Com navegar</span>
+            <span class="status-dot">Organitzat per pàgines</span>
+          </div>
+          <div class="panel-grid">
+            <article>
+              <h3>Projecte</h3>
+              <p>Context i aportació del TDR.</p>
+            </article>
+            <article>
+              <h3>Procés</h3>
+              <p>Cronologia tècnica pas a pas.</p>
+            </article>
+            <article>
+              <h3>Vídeos</h3>
+              <p>Proves visuals i demostració.</p>
+            </article>
+            <article>
+              <h3>Recursos</h3>
+              <p>STL, documents i enllaços útils.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="lectura">
+        <div class="section-head reveal">
+          <p class="eyebrow">Lectura guiada</p>
+          <h2>Tècnic però fàcil d'entendre</h2>
+          <p class="section-lead">La web combina una capa de resum per a tothom i una capa de detall tècnic per qui vulgui aprofundir.</p>
+        </div>
+
+        <div class="dual-grid">
+          <article class="detail-card reveal">
+            <p class="card-meta">Per a tothom</p>
+            <h3>Què s'ha fet i per què</h3>
+            <p>
+              Aquest TDR mostra com passar d'una idea a un vehicle RC funcional, explicant el procés amb llenguatge clar,
+              vídeos i recursos visuals.
+            </p>
+            <ul class="chip-list">
+              <li>Objectiu clar</li>
+              <li>Procés ordenat</li>
+              <li>Resultat verificable</li>
+            </ul>
+          </article>
+
+          <article class="detail-card detail-tech reveal">
+            <p class="card-meta">Fitxa tècnica express</p>
+            <h3>Base d'enginyeria del projecte</h3>
+            <div class="tech-table">
+              <p><span>Disseny</span><strong>CAD paramètric</strong></p>
+              <p><span>Fabricació</span><strong>Impressió FDM</strong></p>
+              <p><span>Materials</span><strong>PLA · PETG · TPU</strong></p>
+              <p><span>Validació</span><strong>Muntatge + pista</strong></p>
+              <p><span>Entrega</span><strong>STL + memòria + vídeo</strong></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="mapa">
+        <div class="section-head reveal">
+          <p class="eyebrow">Mapa del portfoli</p>
+          <h2>Cada tema en la seva pàgina</h2>
+          <p class="section-lead">Tria directament el bloc que vulguis consultar.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="info-card reveal">
+            <h3>Projecte</h3>
+            <p>Objectiu, valor del treball i decisions generals de disseny.</p>
+            <a class="card-action" href="projecte.html">Obrir pàgina</a>
+          </article>
+          <article class="info-card reveal">
+            <h3>Procés</h3>
+            <p>Del concepte inicial al model funcional validat en condicions reals.</p>
+            <a class="card-action" href="proces.html">Obrir pàgina</a>
+          </article>
+          <article class="info-card reveal">
+            <h3>Vídeos</h3>
+            <p>Galeria visual amb el vídeo principal i espai per nous clips.</p>
+            <a class="card-action" href="videos.html">Obrir pàgina</a>
+          </article>
+          <article class="info-card reveal">
+            <h3>Recursos</h3>
+            <p>STL del model inicial i futurs enllaços del model 2.</p>
+            <a class="card-action" href="recursos.html">Obrir pàgina</a>
+          </article>
+          <article class="info-card reveal">
+            <h3>Contacte</h3>
+            <p>Formulari directe per dubtes tècnics o comentaris.</p>
+            <a class="card-action" href="contacte.html">Obrir pàgina</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p id="copyright"></p>
+        <a href="#top">Torna amunt</a>
+      </div>
+    </footer>
+  </body>
+</html>
